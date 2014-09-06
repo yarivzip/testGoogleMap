@@ -3,16 +3,16 @@
 
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
  	xmlns:android   = "http://schemas.android.com/apk/res/android"
-	id          = "com.isrcorp.isrpoles"
+	id          = "com.yarivzip.testgooglemaps"
 	version     = "1.0.6"
 	versionCode = "11" >
 
-	<name>isrPoles</name>
-	<title>isrPoles</title>
-	<description>Bus stations poles and digital signage maintenance application</description>
-	<author href="http://www.isrcorp.co.il" email="yariv@isrcorp.co.il">
+	<name>testgooglemaps</name>
+	<title>testgooglemaps</title>
+	<description>testing google maps in phonegap build</description>
+	<!--author href="http://www.isrcorp.co.il" email="yariv@isrcorp.co.il">
 		Yariv Ziporin 
-	</author>
+	</author-->
 	
 	<!--This allows your app to load assets from all *.phongap.com domains-->
     <access origin="*" subdomains="true" />	
@@ -82,7 +82,4 @@
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
 
 	
-	<name>ISRMaintenance</name>
-	<description>ISR Stations maintenance</description>
-	<author href="http://isrcorp.co.il" email="yariv@isrcorp.co.il">Yariv Ziporin</author>
 </widget>
