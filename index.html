@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="rtl">
+	<title>&nbsp;</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    	
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="map.js"></script>
+		<!--script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&language=ar?key=AIzaSyA-KNUvQ48hVncUWDvQBxkjsctBCXA6l0g"></script-->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&language=he&key=AIzaSyA-KNUvQ48hVncUWDvQBxkjsctBCXA6l0g"></script>
+
+		
+		<style type="text/css">
+			html { height: 100% }
+			body { height: 100%; margin: 0; padding: 0 }
+			#map-canvas { height: 100% }
+    	</style>
+		
+	</head>
+	
+	<body>
+		<div data-role="page" id="map-page" data-url="map-page">
+	    	<div data-role="header" data-theme="a">
+	    		<h1>עמודים בסביבתי</h1>
+	    	</div>
+	    <div role="main" class="ui-content" id="map-canvas" >
+        <!-- map loads here... -->
+    	</div>
+		</div><!-- end page1 -->		
+
+	</body>
+</html>

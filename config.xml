@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+ 	xmlns:android   = "http://schemas.android.com/apk/res/android"
+	id          = "com.isrcorp.isrpoles"
+	version     = "1.0.6"
+	versionCode = "11" >
+
+	<name>isrPoles</name>
+	<title>isrPoles</title>
+	<description>Bus stations poles and digital signage maintenance application</description>
+	<author href="http://www.isrcorp.co.il" email="yariv@isrcorp.co.il">
+		Yariv Ziporin 
+	</author>
+	
+	<!--This allows your app to load assets from all *.phongap.com domains-->
+    <access origin="*" subdomains="true" />	
+
+ <!-- to enable individual permissions use the following examples -->
+	<feature name="http://api.phonegap.com/1.0/device"/> 
+    <feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>		
+	
+	<feature name="SplashScreen"><param name="android-package" value="org.apache.cordova.SplashScreen" /></feature>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+
+	<!-- versionCode is optional and Android only -->
+
+	<preference name="phonegap-version" value="3.5.0" />
+	<!--preference name="SplashScreen" value="Screen"/-->
+	<preference name="splash-screen-duration" value="10000"/>
+    <!--preference name="show-splash-screen-spinner" value="true" /-->           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+    <!--preference name="auto-hide-splash-screen"    value="true" /-->           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+	
+
+
+ 	<!-- Core plugins -->
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+	<gap:plugin name="com.jcjee.plugins.emailcomposer" version="1.4.6" />
+
+    <!-- Define app splash screen for each platform. -->
+    <gap:splash src="splash.png"/> <!-- default splash -->
+    
+    <gap:splash src="res/screen/android/screen-ldpi.png"       gap:platform="android" gap:qualifier="ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi.png"       gap:platform="android" gap:qualifier="mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi.png"       gap:platform="android" gap:qualifier="hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdp.png"      gap:platform="android" gap:qualifier="xhdpi" />
+    <!--gap:splash src="res/screen/android/screen-ldpi-landscape.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-landscape.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-landscape.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-landscape.png"      gap:platform="android" gap:qualifier="port-xhdpi" /-->
+    <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
+
+	
+	<name>ISRMaintenance</name>
+	<description>ISR Stations maintenance</description>
+	<author href="http://isrcorp.co.il" email="yariv@isrcorp.co.il">Yariv Ziporin</author>
+</widget>
